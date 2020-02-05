@@ -1,0 +1,29 @@
+support following tokens:
+xx LETSTAR "let*"
+xx LAMBDA  "lambda"
+xx INPUT   "input"
+xx PRINT   "print"
+xx IF      "if"
+xx EXIT    "exit"
+xx PROGN   "progn"
+xx LPAREN  "("
+xx RPAREN  ")"
+xx ADD     "+"
+xx MULT    "*"
+xx DIV     "/"
+xx SUB     "-"
+xx AND     "and"
+xx OR      "or"
+xx NOT     "not"
+xx LT      "<"
+xx GT      ">"
+xx LE      "<="
+xx GE      ">="
+xx EQ      "="
+xx NE      "/="
+x IDENT    -- must start with a letter or underscore, followed by any number of letters, numbers, or underscores
+x INTCONST -- any number optionally preceeded by +/-
+x STRCONST -- any string between ("), on one line
+xx T       "t"
+xx NIL     "nil"
+xx UNKNOWN 
