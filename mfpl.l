@@ -10,7 +10,7 @@
  *	Definitions of regular expressions
 */
 
-WSPACE		[ \t\n\r]+
+WSPACE		[ \t\r]+
 
 LO_ALPHA		[a-z]
 HI_ALPHA		[A-Z]
@@ -130,7 +130,7 @@ COMMENT           ";".*$
 			printf("TOKEN: PROGN      LEXEME: %s\n", yytext);
 			return T_PROGN;
 			}
-"\r\n"  {
+"\n"  {
 	    numLines = numLines + 1;
       }
 {INTCONST}	     {
